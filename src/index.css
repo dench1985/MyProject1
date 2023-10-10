@@ -14,7 +14,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top: 19px;
-  padding-bottom: 19px;
+  padding-bottom: 76px;
   padding-left: 30px;
   padding-right: 30px;
 
@@ -27,6 +27,25 @@ header .right {
   gap: 59px;
 }
 
+header .right{
+  color: #000;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; /* 20.8px */
+}
+
+header .icon{
+  cursor: pointer;
+}
+
+header .right > *{
+ cursor: pointer;
+}
+header .right > *:hover{
+  color: #393;
+ }
 header .green-btn {
   border-radius: 5px;
   border: 2px solid #393;
@@ -35,10 +54,20 @@ header .green-btn {
   min-height: 49px;
   width: 129px;
   color: white;
+
+  color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+cursor: pointer;
 }
 
 header .active {
   color: green;
+  font-weight: 600;
 }
 
 /*----------------------------------SECTION I-----------------------------------------------*/
@@ -61,48 +90,72 @@ main section.group-hero .title {
   font-size: 80px;
   color: white;
 
+  color: #FFF;
+font-family: Montserrat;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; /* 104px */
 
   margin-bottom: 60px;
 }
 
 main section.group-hero .title span {
-  font-size: 50px;
+  font-size: 63px;
 
 }
 
 main section.group-hero .btns {
   display: flex;
-  gap: 40px;
-  padding: 25px 50px;
+  gap: 19px;
+  cursor: pointer;
+
 }
 
 main section.group-hero .btns button {
-  padding: 25px 50px;
+  height: 82px;
+  width: 155px;
+
   border-radius: 13px;
+  border: none;
   background-color: white;
 
+  color: #2D2D2D;
+font-family: Montserrat;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; /* 32.5px */
   
 }
 
 main section.group-hero .btns button.secondary {
+  width: 230px;
+  
   background-color: transparent;
   border: 2px solid white;
   color: white;
 
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 32.5px */
+
 }
 
 /*----------------------------------SECTION II---------------------------------------------------*/
-main section.categories {
-  background-color: white;
+main section.categories {  
   padding: 40px 30px;
-  padding-bottom: 112px;
+  padding-bottom: 89px;
 
 }
 
 main section.categories .top {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 96px;
   margin-bottom: 20px;
 
 
@@ -137,6 +190,8 @@ main section.categories .top button {
 
   background-color: transparent;
   border: 2px solid #8B8B8B;
+
+  cursor: pointer;
 }
 
 main section.categories .botton {
@@ -149,6 +204,10 @@ main section.categories .botton {
 
 main section.categories .botton img {
   margin-bottom: 20px;
+}
+
+main section.categories .botton .item{
+  cursor: pointer;
 }
 
 main section.categories .botton .item-name {
@@ -261,7 +320,7 @@ main section.sales .right button {
 
 main section.stock {
   padding: 49px 30px;
-  padding-bottom: 170px;
+  padding-bottom: 150px;
 }
 
 main section.stock .stock-item {
@@ -318,6 +377,11 @@ main section.stock .stock-container .container-item .thumbanail button {
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform .3s ease;
 
+  cursor: pointer;
+
+}
+main section.stock .stock-container .container-item .thumbanail img{
+  cursor: pointer;
 }
 
 main section.stock .stock-container .container-item:hover .thumbanail button {
@@ -396,9 +460,7 @@ main section.stock .stock-container .container-item .price .sale .p {
 footer .container {
   display: flex;
   justify-content: space-between;  
-  padding-bottom: 76px;
-  padding-left: 30px;
-  padding-right: 62px;
+  padding: 48px 32px;
 }
 footer .left{
   min-width: 600px;
@@ -444,6 +506,7 @@ footer .container .social-netrwork-item{
 footer .container .social-netrwork-item img{
 width: 50px;
 height: 50px;
+padding-bottom: 8px;
 }
 
 footer .container .social-netrwork-item p{
@@ -483,6 +546,10 @@ footer .container .city {
   font-weight: 600;
   line-height: 130%;
   /* 52px */
+}
+
+footer .container .city a:visited{
+color: inherit;
 }
 
 footer .container .work-regim {
